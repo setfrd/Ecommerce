@@ -21,7 +21,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="nav-logo">
         <img src={logo} alt="Shopper Logo" />
-        <p>FRUITY</p>
+        <p>RAF & CO.</p>
       </div>
       <img
         className="nav-dropdown"
@@ -47,7 +47,7 @@ const Navbar = () => {
           }}
         >
           <Link style={{ textDecoration: 'none' }} to="/mens">
-            Vegetables
+            Men
           </Link>
           {menu === 'mens' ? <hr /> : <></>}
         </li>
@@ -57,7 +57,7 @@ const Navbar = () => {
           }}
         >
           <Link style={{ textDecoration: 'none' }} to="/womens">
-            Fruits
+            Women
           </Link>
           {menu === 'womens' ? <hr /> : <></>}
         </li>
@@ -67,7 +67,7 @@ const Navbar = () => {
           }}
         >
           <Link style={{ textDecoration: 'none' }} to="/kids">
-            Other
+            Kids
           </Link>
           {menu === 'kids' ? <hr /> : <></>}{' '}
         </li>
