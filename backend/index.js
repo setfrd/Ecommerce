@@ -1,4 +1,6 @@
-const port = 5000;
+require('dotenv').config();
+
+const port = process.env.PORT || 5000;
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
@@ -13,10 +15,10 @@ app.use(cors());
 
 // Database connection with MongoDB
 mongoose
-  .connect(
-    'mongodb+srv://ola:ola123321@cluster0.wtklngl.mongodb.net/grocery-store',
-    { useNewUrlParser: true, useUnifiedTopology: true }
-  )
+  .connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => {
     console.log('Connected to MongoDB');
   })
@@ -79,7 +81,7 @@ const storage = multer.diskStorage({
   filename: (req, file, cb) => {
     cb(
       null,
-      `${file.fieldname}_${Date.now()}${path.extname(file.originalname)}`
+      `${file.fieldname}_${Date.now()}${path.extname(file.originalname)}`,
     );
   },
 });
@@ -107,14 +109,16 @@ app.post('/addproduct', async (req, res) => {
   let products = await Product.find({});
   let id;
   if (products.length > 0) {
-    let last_product_array = products.silence(-1);
+    let last_product_array = products.slice(-1);
     let last_product = last_product_array[0];
     id = last_product.id + 1;
+  } else {
+    id = 1;
   }
   const product = new Product({
-    id: req.body.id,
+    id: id,
     name: req.body.name,
-    image: req.body.image, // Use req.body.image here
+    image: req.body.image,
     category: req.body.category,
     new_price: req.body.new_price,
     old_price: req.body.old_price,
