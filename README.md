@@ -1,4 +1,4 @@
-# Grocery Store Project
+# Store Project
 
 # RAF & CO.
 
