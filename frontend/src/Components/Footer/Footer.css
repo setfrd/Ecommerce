@@ -4,26 +4,38 @@
   justify-content: center;
   align-items: center;
   gap: 50px;
+  background: #1a1a1a;
+  padding: 60px 0 0 0;
 }
 .footer-logo {
   display: flex;
   align-items: center;
   gap: 20px;
 }
+.footer-logo img {
+  filter: brightness(0) invert(1);
+}
 .footer-logo p {
-  color: #383838;
+  color: #ffffff;
   font-size: 46px;
   font-weight: 700;
+  letter-spacing: 2px;
 }
 .footer-links {
   display: flex;
   list-style: none;
   gap: 50px;
-  color: #252525;
-  font-size: 20px;
+  color: #a0a0a0;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
-.footer-link li {
+.footer-links li {
   cursor: pointer;
+  transition: color 0.3s ease;
+}
+.footer-links li:hover {
+  color: #c9a96e;
 }
 .footer-social-icon {
   display: flex;
@@ -32,8 +44,18 @@
 .footer-icons-container {
   padding: 10px;
   padding-bottom: 6px;
-  background: #fbfbfb;
-  border: 1px solid #ebebeb;
+  background: #2d2d2d;
+  border: 1px solid #3a3a3a;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.footer-icons-container:hover {
+  background: #c9a96e;
+  border-color: #c9a96e;
+}
+.footer-icons-container img {
+  filter: brightness(0) invert(1);
+  width: 20px;
 }
 .footer-copyright {
   display: flex;
@@ -42,37 +64,37 @@
   gap: 30px;
   width: 100%;
   margin-bottom: 30px;
-  color: #1a1a1a;
-  font-size: 20px;
+  color: #6b6b6b;
+  font-size: 14px;
 }
 .footer-copyright hr {
   width: 80%;
   border: none;
   border-radius: 10px;
-  height: 3px;
-  background: #c7c7c7;
+  height: 1px;
+  background: #3a3a3a;
 }
-@media(max-width:800px){
-  .footer{
+@media (max-width: 800px) {
+  .footer {
     gap: 20px;
+    padding: 30px 0 0 0;
   }
-  .footer-logo{
+  .footer-logo {
     gap: 10px;
     align-items: end;
   }
-  .footer-logo img{
-    width: 40px
-    ;
+  .footer-logo img {
+    width: 40px;
   }
-  .footer-logo p{
+  .footer-logo p {
     font-size: 14px;
     gap: 10px;
   }
-  .footer-social-icon img{
+  .footer-social-icon img {
     width: 22px;
   }
-  .footer-links{
-    font-size: 15px;
+  .footer-links {
+    font-size: 12px;
     display: flex;
     gap: 30px;
   }

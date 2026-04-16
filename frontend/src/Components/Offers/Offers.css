@@ -5,7 +5,8 @@
   margin: auto;
   padding: 0px 140px;
   margin-bottom: 150px;
-  background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-radius: 12px;
 }
 .offers-left {
   flex: 1;
@@ -14,26 +15,36 @@
   justify-content: center;
 }
 .offers-left h1 {
-  color: #171717;
+  color: #ffffff;
   font-size: 80px;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -1px;
 }
 .offers-left p {
-  color: #171717;
-  font-size: 22px;
+  color: #c9a96e;
+  font-size: 18px;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 .offers-left button {
   width: 282px;
   height: 70px;
   border-radius: 35px;
-  background: #ff4141;
+  background: #c9a96e;
   border: none;
-  color: white;
-  font-size: 22px;
-  font-weight: 500;
+  color: #1a1a1a;
+  font-size: 18px;
+  font-weight: 600;
   margin-top: 30px;
   cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.offers-left button:hover {
+  background: #d4b87a;
+  transform: translateY(-2px);
 }
 .offers-right {
   flex: 1;
@@ -51,7 +62,7 @@
     font-size: 40px;
   }
   .offers-left p {
-    font-size: 18px;
+    font-size: 14px;
   }
   .offers-right img {
     width: 300px;
@@ -59,7 +70,7 @@
   .offers-left button {
     width: 220px;
     height: 50px;
-    font-size: 18px;
+    font-size: 16px;
   }
   .offers-right {
     padding-top: 30px;
@@ -75,7 +86,7 @@
     font-size: 40px;
   }
   .offers-left p {
-    font-size: 16px;
+    font-size: 13px;
   }
   .offers-right img {
     width: 200px;
@@ -83,7 +94,7 @@
   .offers-left button {
     width: 160px;
     height: 40px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .offers-right {
     padding-top: 10px;
@@ -97,7 +108,7 @@
     font-size: 22px;
   }
   .offers-left p {
-    font-size: 13px;
+    font-size: 11px;
   }
   .offers-right img {
     width: 180px;
@@ -105,7 +116,7 @@
   .offers-left button {
     width: 140px;
     height: 30px;
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 @media (max-width: 500px) {
@@ -117,7 +128,7 @@
     font-size: 16px;
   }
   .offers-left p {
-    font-size: 10px;
+    font-size: 9px;
   }
   .offers-right img {
     width: 120px;
@@ -125,7 +136,7 @@
   .offers-left button {
     width: 120px;
     height: 25px;
-    font-size: 10px;
+    font-size: 9px;
     margin-top: 12px;
   }
 }

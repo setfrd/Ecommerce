@@ -1,6 +1,6 @@
 .hero {
   height: 100vh;
-  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+  background: linear-gradient(135deg, #f9f6f1 0%, #efe9e0 50%, #e8e0d4 100%);
   display: flex;
 }
 .hero-left {
@@ -13,12 +13,14 @@
   line-height: 1.1;
 }
 .hero-left h2 {
-  color: #090909;
-  font-size: 26px;
+  color: #c9a96e;
+  font-size: 16px;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 .hero-left p {
-  color: #171717;
+  color: #1a1a1a;
   font-size: 100px;
   font-weight: 700;
 }
@@ -39,10 +41,17 @@
   height: 70px;
   border-radius: 75px;
   margin-top: 30px;
-  background: #ff4141;
+  background: #1a1a1a;
   color: white;
   font-size: 22px;
   font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.hero-latest-btn:hover {
+  background: #c9a96e;
+  transform: translateY(-2px);
 }
 .hero-right {
   flex: 1;
@@ -55,7 +64,7 @@
     padding-left: 100px;
   }
   .hero-left h2 {
-    font-size: 22px;
+    font-size: 14px;
   }
   .hero-left p {
     font-size: 60px;
@@ -79,7 +88,7 @@
     padding-left: 80px;
   }
   .hero-left h2 {
-    font-size: 20px;
+    font-size: 12px;
   }
   .hero-left p {
     font-size: 50px;
@@ -101,7 +110,7 @@
     padding-left: 30px;
   }
   .hero-left h2 {
-    font-size: 16px;
+    font-size: 11px;
   }
   .hero-left p {
     font-size: 40px;
@@ -126,7 +135,7 @@
     display: none;
   }
   .hero-left h2 {
-    font-size: 18px;
+    font-size: 12px;
   }
   .hero-left p {
     font-size: 50px;
