@@ -1,0 +1,26 @@
+.announcement-bar {
+  background: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.announcement-bar p {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .announcement-bar {
+    font-size: 11px;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .announcement-bar {
+    font-size: 10px;
+  }
+}
