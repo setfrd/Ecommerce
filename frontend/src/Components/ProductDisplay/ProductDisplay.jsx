@@ -44,13 +44,13 @@ const ProductDisplay = (props) => {
           outershirt.
         </div>
         <div className="productdisplay-right-size">
-          <h1>Select Amount</h1>
+          <h1>Select Size</h1>
           <div className="productdisplay-right-sizes">
-            <div>+1KG</div>
-            <div>+2KG</div>
-            <div>+3KG</div>
-            <div>+4KG</div>
-            <div>+5KG</div>
+            <div>S</div>
+            <div>M</div>
+            <div>L</div>
+            <div>XL</div>
+            <div>XXL</div>
           </div>
         </div>
         <button
